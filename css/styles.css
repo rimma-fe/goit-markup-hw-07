@@ -21,7 +21,7 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  сolor: var(--primary-text-color);
+  color: var(--primary-text-color);
 
   font-size: 14px;
   line-height: 1.71;
@@ -177,7 +177,7 @@ ul {
   background-size: cover;
 }
 
-/.hero {
+.hero {
   margin-top: 0;
   margin-bottom: 0px;
   text-align: center;
@@ -1005,7 +1005,7 @@ footer .logo {
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  drop-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .footer__signup-field--input:focus {
@@ -1092,7 +1092,7 @@ footer .logo {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.form .backdrop__form-input:focus {
+.backdrop__form-input:focus {
   outline: none;
   border-color: var(--accent);
 }
@@ -1135,7 +1135,7 @@ footer .logo {
   margin-bottom: 30px;
 }
 
-.signup-button {
+.footer__sign-button {
   min-width: 200px;
   height: 50px;
   margin: 0;
@@ -1145,12 +1145,12 @@ footer .logo {
   border-radius: 4px;
   color: var(--second-text-accent);
 }
-.signup-button :hover,
-.signup-button :focus {
+.footer__sign-button :hover,
+.footer__sign-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.form-icon {
+.backdrop__form--icon {
   position: absolute;
 
   left: 12px;
