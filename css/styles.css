@@ -12,6 +12,10 @@
   --icons-list-color: #afb1b8;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --backdrop-color: rgba(33, 150, 243, 0.9);
+  --mainFontFamily: "Roboto", sans-serif;
+  --secondaryFontFamily: "Raleway", sans-serif;
+  --outlineColorblack: #212121;
+  --borderColorBlack: #212121;
 }
 
 body {
@@ -25,16 +29,6 @@ body {
 
   letter-spacing: 0.03em;
 }
-/* основной цвет текста #757575;*/
-/*вторичный цвет текста background: #212121;*/
-/*background: #000000;
-/*background: #FFFFFF;
-/*акцент: #2196F3;
-/*background: #F5F4FA;*/
-/*background-color 2F303A */
-/*background-colorFFFFFF*/
-
-/*header-main-container*/
 
 .container {
   width: 1200px;
@@ -62,7 +56,7 @@ body {
   margin: 0 auto;
 }
 
-.section-header {
+.header {
   border: 1px solid var(--border-color);
 }
 
@@ -167,17 +161,6 @@ ul {
   line-height: 1.19;
   text-decoration: none;
 }
-
-/*.container {
-  
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-}*/
 
 /*герой*/
 
@@ -328,7 +311,7 @@ ul {
 
   min-height: 581px;
   min-width: 528px;
-  background-color: #ffffff;
+  background-color: var(--background-color);
 
   transform: translate(-50%, -50%);
   transition: translate 250ms linear, opacity 250ms linear --timing-function;
@@ -347,11 +330,11 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 
-  background-color: #ffffff;
+  background-color: var(--background-color);
   width: 30px;
   height: 30px;
   background-image: url("../images/close-icon.svg");
-  color: #000000;
+  color: var(--title-text-color);
   box-sizing: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -473,7 +456,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--second-text-accent);
 }
 /*section team*/
 
@@ -568,7 +551,7 @@ ul {
 
   padding: 0;
   margin: 0;
-  outline: 1 px solid black;
+  outline: 1 px solid var(--outlineColorblack);
   list-style: none;
 }
 /*customers*/
@@ -709,11 +692,11 @@ ul {
 
 /*фильтр*/
 
-.filter-item:not(:last-child) {
+.section-projects__filter-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.projects-filter {
+.section-projects__filter {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -723,15 +706,11 @@ ul {
   margin-right: auto;
 }
 
-/*.our-projects .container {
-  align-items: center;
-}*/
-
-.our-projects {
+.section-projects {
   margin-top: 94px;
 }
 
-.filter {
+.section-projects__filter-button {
   padding: 6px 22px;
   border-radius: 4px;
   font-family: Roboto;
@@ -749,8 +728,8 @@ ul {
   transition-timing-function: var(--timing-function);
 }
 
-.filter:hover,
-.filter:focus {
+.section-projects__filter-button:hover,
+.section-projects__filter-button:focus {
   background-color: var(--accent);
   color: var(--second-text-accent);
   border: var(--accent);
@@ -763,7 +742,7 @@ ul {
 .our-projects .container {
   width: 1200px;
 }
-.project-set {
+.section-projects__project-set {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -772,7 +751,7 @@ ul {
   list-style: none;
 }
 
-.project-item {
+.section-projects__project-item {
   margin-left: 30px;
   margin-top: 30px;
   width: 370px;
@@ -780,12 +759,12 @@ ul {
   border: 1px solid #eeeeee;
 }
 
-.img-card {
+.section-projects__project-item--img {
   position: relative;
   display: block;
 }
 
-.project-link {
+.section-projects__project-link {
   text-decoration: none;
   display: block;
   transition-property: box-shadow;
@@ -793,19 +772,19 @@ ul {
   transition-timing-function: var(--timing-function);
 }
 
-.project-link:hover,
-.project-link:focus {
+.section-projects__project-link:hover,
+.section-projects__project-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
-.card-body {
+.section-projects__card-body {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.project-name {
+.section-projects__card-body--name {
   margin-top: 0;
   margin-bottom: 0;
 
@@ -825,7 +804,7 @@ ul {
   line-height: 1, 9;
   text-decoration: none;
 }
-.project-link {
+.section-projects__project-link {
   text-decoration: none;
 }
 
@@ -835,7 +814,7 @@ ul {
   overflow: hidden;
 }
 
-.card-photo .overlay {
+.section-projects__item-overlay {
   position: absolute;
   text-decoration: none;
   padding-left: 24px;
@@ -853,11 +832,11 @@ ul {
   transition: transform 250ms ease;
 }
 
-.project-link:hover .overlay {
+.section-projects__project-link:hover .section-projects__item-overlay {
   transform: translateY(0);
 }
 
-.overlay-text {
+.section-projects__overlay-text {
   padding: 0;
   margin: 0;
   text-align: start;
@@ -1000,7 +979,7 @@ footer .logo {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--second-text-accent);
 }
 
 .footer__signup-field {
@@ -1009,7 +988,7 @@ footer .logo {
 }
 
 .footer__signup-field--label {
-  color: #ffffff;
+  color: var(--second-text-accent);
   position: absolute;
   top: 50%;
   left: 16px;
@@ -1022,7 +1001,7 @@ footer .logo {
   width: 358px;
   height: 50px;
   background-color: #2f303a;
-  color: #ffffff;
+  color: var(--second-text-accent);
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1054,7 +1033,7 @@ footer .logo {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  color: #ffffff;
+  color: var(--second-text-accent);
 
   margin: 0;
   padding: 10px 28px;
@@ -1083,7 +1062,7 @@ footer .logo {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--title-text-color);
 
   width: 448px;
   margin-bottom: 12px;
@@ -1164,7 +1143,7 @@ footer .logo {
   padding-bottom: 10px;
   background-color: var(--accent);
   border-radius: 4px;
-  color: #ffffff;
+  color: var(--second-text-accent);
 }
 .signup-button :hover,
 .signup-button :focus {
@@ -1191,7 +1170,7 @@ footer .logo {
   transform: translateY(-50%);
 }
 
-.contract-terms-link {
+.backdrop__checkbox-link {
   color: var(--accent);
 }
 .backdrop__form-label {
@@ -1214,7 +1193,7 @@ footer .logo {
   width: 15px;
   height: 15px;
 
-  border: 2px solid #212121;
+  border: 2px solid var(--borderColorBlack);
 
   border-radius: 3px;
   cursor: pointer;
@@ -1242,7 +1221,7 @@ footer .logo {
   margin: -1px;
 }
 
-.backdrop__field-check--container .text {
+.backdrop__checkbox-text {
   display: inline-block;
   margin-left: 39px;
 }
@@ -1261,7 +1240,7 @@ footer .logo {
   border: none;
   background-color: var(--accent);
   border-radius: 4px;
-  color: #ffffff;
+  color: var(--second-text-accent);
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
