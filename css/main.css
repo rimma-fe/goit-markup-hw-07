@@ -401,7 +401,8 @@ ul {
   text-decoration: none;
 }
 
-.header__logo-nav {
+.header__logo {
+  display: inline-block;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -414,12 +415,6 @@ ul {
 
 .logo-accent {
   color: #2196f3;
-}
-
-.header .logo {
-  display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .header__nav-link--current {
