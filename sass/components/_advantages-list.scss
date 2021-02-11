@@ -47,20 +47,12 @@
   margin-bottom: 0;
 }
 
-.advantages-icon-list {
+.section-advantages__list-icon {
   display: flex;
 
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.section-advantages .container {
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .section-advantages__list-title {
@@ -71,7 +63,7 @@
   text-transform: uppercase;
 }
 
-.features-list .text {
+.section-advantages__list-text {
   font-size: 14px;
   line-height: 1.71;
   color: $primary-text-color;
