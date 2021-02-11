@@ -5,6 +5,7 @@
 @import "./components/logo";
 @import "./components/_link-current";
 @import "./components/header-navigation";
+@import "./components/header-contacts-list";
 @import "./components/hero-section";
 @import "./components/hero-button";
 
@@ -21,12 +22,6 @@
   font-size: 14px;
   line-height: 1.71;
   color: $primary-text-color;
-}
-
-.section-advantages__list {
-  display: flex;
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .section-advantages__list-item {
@@ -349,57 +344,6 @@
 }
 
 /*header__contacts*/
-
-.header__contacts-link {
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: $primary-text-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition-property: color fill;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
-}
-
-.header__contacts--mail-icon {
-  align-items: center;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-.header__contacts-link:hover,
-.header__contacts-link:focus {
-  color: $accent;
-  fill: $accent;
-}
-
-.header__contacts--tel-icon {
-  align-items: center;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.header__contacts-list {
-  display: flex;
-  align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.header__contacts-item + .header__contacts-item {
-  margin-left: 50px;
-}
 
 /* our projects */
 
