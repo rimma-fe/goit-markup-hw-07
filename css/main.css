@@ -401,7 +401,7 @@ ul {
   text-decoration: none;
 }
 
-.header__logo-nav {
+.header__logo {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -414,12 +414,6 @@ ul {
 
 .logo-accent {
   color: #2196f3;
-}
-
-.header .logo {
-  display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .header__nav-link--current {
@@ -457,7 +451,7 @@ ul {
   margin-left: 93px;
 }
 
-.header__nav-list__logo-nav {
+.header__nav-list__logo {
   display: inline-block;
   margin-right: 93px;
   color: #000000;
@@ -1113,6 +1107,12 @@ footer .logo {
 
 /*section-advantages*/
 /*кнопка заказать услугу*/
+.header .logo {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .modal__close-button {
   content: "";
   position: absolute;

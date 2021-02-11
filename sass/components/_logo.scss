@@ -7,7 +7,7 @@
   line-height: 1.19;
   text-decoration: none;
 }
-.header__logo-nav {
+.header__logo {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -19,9 +19,4 @@
 }
 .logo-accent {
   color: $accent;
-}
-.header .logo {
-  display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
