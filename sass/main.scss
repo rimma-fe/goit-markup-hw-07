@@ -2,13 +2,7 @@
 @import "./base/normalize";
 @import "./base/defaults";
 @import "./components/backdrop";
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
+@import "./components/logo";
 
 .hero__overlay {
   max-width: 1600;
@@ -39,35 +33,8 @@
 }
 
 /*logo*/
-.logo {
-  display: inline-block;
-  color: $logo-color;
-  font-family: $secondaryFontFamily;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-}
-header__logo-nav {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.a .logo {
-  display: inline-block;
-  padding-top: 60px;
-  margin-bottom: 20px;
-}
-.logo-accent {
-  color: $accent;
-}
 
 /*убирает точки со всех списков*/
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 
 /* Headernav*/
 
@@ -88,50 +55,49 @@ ul {
   text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
-}
 
-.header__nav-link:hover,
-.header__nav-link:focus {
-  color: $accent;
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }
 
 .header__nav-link--current {
   position: relative;
   display: block;
   color: $accent;
-}
 
-.header__nav-link--current::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: -1px;
-  border-radius: 2px;
-  background-color: $accent;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+    background-color: $accent;
+  }
 }
-
 .header__nav-list {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 93px;
-}
 
-.header__nav-item:not(:last-child) {
-  margin-right: 50px;
-}
+  &__logo-nav {
+    display: inline-block;
+    margin-right: 93px;
+    color: $logo-color;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+  }
 
-.header__logo-nav {
-  display: inline-block;
-  margin-right: 93px;
-  color: $logo-color;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
+  &__nav-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 /*герой*/
@@ -155,21 +121,19 @@ ul {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  /*background-color: $sec-background-color);*/
-}
 
-.hero__title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-weight: 900px;
-  font-size: 44px;
-  line-height: 1.4;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $second-text-accent;
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 900px;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $second-text-accent;
+  }
 }
-
 /*section*/
 .section .container {
   padding-left: 15px;
@@ -240,12 +204,12 @@ ul {
   cursor: pointer;
 
   transition: transform 250ms $timing-function;
-}
 
-.hero__button:hover,
-.hero__button:focus {
-  background-color: $background-color;
-  color: $accent;
+  &__button:hover,
+  &__button:focus {
+    background-color: $background-color;
+    color: $accent;
+  }
 }
 
 .modal__close-button {
@@ -1015,11 +979,6 @@ footer .logo {
   border-color: $accent;
 }
 
-.backdrop__field-check--container {
-  font: inherit;
-  margin-bottom: 30px;
-}
-
 .footer__sign-button {
   min-width: 200px;
   height: 50px;
@@ -1058,12 +1017,6 @@ footer .logo {
 .backdrop__checkbox-link {
   color: $accent;
 }
-.backdrop__form-label {
-  color: #757575;
-  font-size: 12px;
-  line-height: 1.17;
-  margin-bottom: 4px;
-}
 
 .backdrop__label-text {
   margin-bottom: 4px;
@@ -1082,12 +1035,6 @@ footer .logo {
 
   border-radius: 3px;
   cursor: pointer;
-}
-.backdrop__checkbox-label {
-  display: inline-block;
-
-  position: relative;
-  margin-bottom: 4px;
 }
 
 .backdrop__checkbox-input:checked + .backdrop__checkbox-icon {

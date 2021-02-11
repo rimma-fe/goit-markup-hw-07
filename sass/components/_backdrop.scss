@@ -48,21 +48,8 @@
   width: 448px;
   margin-bottom: 12px;
 }
-.backdrop__form {
-  width: 448px;
 
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.backdrop__form-field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 28px;
-  margin: 0;
-}
-
-.backdrop__form .backdrop__form-input {
+.backdrop__form-input {
   width: 448px;
   height: 40px;
   margin: 0;
@@ -72,12 +59,31 @@
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
-.backdrop__form-input:focus {
-  outline: none;
-  border-color: $accent;
-}
 
-.backdrop__form-input:focus + .backdrop__form--icon {
-  fill: $accent;
+  &__form-input:focus {
+    outline: none;
+    border-color: $accent;
+
+    &__form-input:focus + .backdrop__form--icon {
+      fill: $accent;
+    }
+  }
+}
+.backdrop__form-label {
+  color: #757575;
+  font-size: 12px;
+  line-height: 1.17;
+  margin-bottom: 4px;
+}
+.backdrop__form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+  margin: 0;
+}
+.backdrop__form {
+  width: 448px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
