@@ -3,19 +3,8 @@
 @import "./base/defaults";
 @import "./components/backdrop";
 @import "./components/logo";
-
-.hero__overlay {
-  max-width: 1600;
-  height: 600px;
-  padding-top: 200px;
-  margin-left: auto;
-  margin-right: auto;
-
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0px;
-  text-align: center;
-}
+@import "./components/_link-current";
+@import "./components/header-nav-list";
 
 .hero__title-container {
   width: 696px;
@@ -38,30 +27,6 @@
 
 /* Headernav*/
 
-.header__nav {
-  display: flex;
-  align-items: center;
-  /*justify-content: space-between;*/
-}
-.header__nav-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: $title-text-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition-property: color;
-  transition-duration: 250ms;
-
-  &:hover,
-  &:focus {
-    color: $accent;
-  }
-}
-
 .header__nav-link--current {
   position: relative;
   display: block;
@@ -76,27 +41,6 @@
     bottom: -1px;
     border-radius: 2px;
     background-color: $accent;
-  }
-}
-.header__nav-list {
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 93px;
-
-  &__logo-nav {
-    display: inline-block;
-    margin-right: 93px;
-    color: $logo-color;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-  }
-
-  &__nav-item:not(:last-child) {
-    margin-right: 50px;
   }
 }
 
