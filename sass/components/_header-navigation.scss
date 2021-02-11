@@ -1,13 +1,6 @@
 .header__nav {
   display: flex;
   align-items: center;
-}
-
-.header__nav-list {
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 93px;
 
   &__logo {
     display: inline-block;
@@ -19,12 +12,18 @@
     line-height: 1.19;
     text-decoration: none;
   }
+}
 
-  &__nav-item:not(:last-child) {
+.header__nav-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 93px;
+
+  .header__nav-list-item:not(:last-child) {
     margin-right: 50px;
   }
 }
-
 .header__nav-link {
   display: block;
   padding-top: 32px;

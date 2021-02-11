@@ -6,6 +6,7 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .header__contacts-link {
   display: flex;
   margin-top: 0;
@@ -28,6 +29,10 @@
     fill: $accent;
   }
 }
+
+.header__contacts-item + .header__contacts-item {
+  margin-left: 50px;
+}
 .header__contacts--mail-icon {
   align-items: center;
   width: 16px;
@@ -42,8 +47,4 @@
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
-}
-
-.header__contacts-item + .header__contacts-item {
-  margin-left: 50px;
 }

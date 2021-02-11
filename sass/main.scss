@@ -1,11 +1,13 @@
 @import "./utils/variables";
 @import "./base/normalize";
 @import "./base/defaults";
-@import "./components/backdrop";
 @import "./components/logo";
+@import "./components/header-section";
 @import "./components/_link-current";
 @import "./components/header-navigation";
 @import "./components/header-contacts-list";
+@import "./components/backdrop";
+
 @import "./components/hero-section";
 @import "./components/hero-button";
 @import "./components/footer";
