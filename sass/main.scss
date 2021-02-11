@@ -4,37 +4,9 @@
 @import "./components/backdrop";
 @import "./components/logo";
 @import "./components/_link-current";
-@import "./components/header-nav-list";
+@import "./components/header-navigation";
 @import "./components/hero-section";
-
-
-
-
-
-/*герой*/
-
-
-
-/*section*/
-.section .container {
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.section-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-
-  color: $title-text-color;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  text-decoration: none;
-}
+@import "./components/hero-button";
 
 /*section-advantages*/
 .section-advantages__list-title {
@@ -65,33 +37,6 @@
 }
 
 /*кнопка заказать услугу*/
-
-.hero__button {
-  display: inline-block;
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  min-width: 200px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
-  color: $second-text-accent;
-  background-color: $accent;
-  border: 1px solid transparent;
-  border-radius: 4px;
-
-  cursor: pointer;
-
-  transition: transform 250ms $timing-function;
-
-  &__button:hover,
-  &__button:focus {
-    background-color: $background-color;
-    color: $accent;
-  }
-}
 
 .modal__close-button {
   content: "";
