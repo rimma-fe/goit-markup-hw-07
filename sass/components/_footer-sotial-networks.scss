@@ -36,13 +36,15 @@
   transition-timing-function: $timing-function;
 }
 
-.footer__sotial-networks--list-item:not(:last-child) {
-  margin-right: 10px;
-}
+.footer__sotial-networks--list-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 
-.footer__sotial-networks--list-item :hover,
-.footer__sotial-networks--list-item :focus {
-  background-color: $accent;
+  &:hover,
+  &:focus {
+    background-color: $accent;
+  }
 }
 
 .footer__sotial-networks--list-icon {
