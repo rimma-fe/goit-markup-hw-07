@@ -18,8 +18,8 @@
 
   transition: transform 250ms $timing-function;
 
-  &__button:hover,
-  &__button:focus {
+  &:hover,
+  &:focus {
     background-color: $background-color;
     color: $accent;
   }

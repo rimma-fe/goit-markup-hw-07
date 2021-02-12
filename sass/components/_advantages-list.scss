@@ -12,6 +12,16 @@
   list-style: none;
 }
 
+.section-advantages__list-item {
+  width: 270px;
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 4-30px);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .section-advantages__icon-container {
   display: flex;
   align-items: center;
@@ -34,16 +44,7 @@
   background-position: center;
 }
 
-.section-advantages__list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .section-advantages__list-text {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.our-advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
