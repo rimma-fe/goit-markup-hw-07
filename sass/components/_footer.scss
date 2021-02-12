@@ -19,7 +19,6 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-
 .footer__address-container {
   display: flex;
   flex-direction: column;
@@ -38,17 +37,6 @@ footer {
   flex-direction: column;
 
   padding: 0;
-}
-
-.footer__field-button--container {
-  display: inline-flex;
-  justify-content: flex-end;
-}
-.footer__signup-form--container {
-  display: flex;
-  flex-direction: column;
-
-  margin-left: 100px;
 }
 
 footer .logo {

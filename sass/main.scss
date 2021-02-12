@@ -1,29 +1,31 @@
 @import "./utils/variables";
 @import "./base/normalize";
 @import "./base/defaults";
+
 @import "./components/logo";
 @import "./components/header-section";
-@import "./components/_link-current";
+
 @import "./components/header-navigation";
+
 @import "./components/header-contacts-list";
-@import "./components/backdrop";
-@import "./components/advantages-list";
-@import "./components/_duties-section";
+@import "./components/_link-current";
 @import "./components/hero-section";
 @import "./components/hero-button";
-@import "./components/footer";
-@import "./components/projects-section";
+@import "./components/advantages-list";
+@import "./components/_duties-section";
 @import "./components/section-team";
 @import "./components/regular-customers";
+
+@import "./components/projects-section";
+
+@import "./components/footer";
+@import "./components/footer-sotial-networks";
+@import "./components/_footer-signup-form";
+
+@import "./components/backdrop";
 @import "./components/field-check";
 
-/*.header .logo {
-  display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.modal__close-button {
+/*.modal__close-button {
   content: "";
   position: absolute;
 
@@ -49,7 +51,6 @@
   transition: transform 250ms $timing-function;
 }
 
-modal-window-data
 .modal__form {
   position: relative;
   display: block;
@@ -57,9 +58,7 @@ modal-window-data
   align-self: center;
 }
 
-signup form
-
-.footer__signup-form--text {
+signup form .footer__signup-form--text {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -142,9 +141,7 @@ signup form
   background-image: url("../images/icon-send.svg");
 }
 
-data form
-
-.form-field label {
+data form .form-field label {
   margin-top: 10px;
   margin-bottom: 4px;
 }
@@ -208,10 +205,6 @@ data form
   transform: translateY(-50%);
 }
 
-.backdrop__checkbox-link {
-  color: $accent;
-}
-
 .backdrop__label-text {
   margin-bottom: 4px;
 }
@@ -245,11 +238,6 @@ data form
   width: 1px;
   height: 1px;
   margin: -1px;
-}
-
-.backdrop__checkbox-text {
-  display: inline-block;
-  margin-left: 39px;
 }
 
 .backdrop__send-form--button {
