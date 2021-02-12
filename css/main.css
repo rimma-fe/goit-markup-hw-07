@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -566,6 +565,148 @@ ul {
   margin-right: auto;
 }
 
+.section-advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.section-advantages__list__list-item {
+  width: 270px;
+  margin-left: 30px;
+  margin-top: 30px;
+  -ms-flex-preferred-size: calc(100% / 4-30px);
+      flex-basis: calc(100% / 4-30px);
+}
+
+.section-advantages____list--item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-advantages__icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  border: none;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
+.section-advantages__icon-container__list-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section-advantages__list-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section-advantages__list-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.section-advantages__list-title {
+  color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.section-advantages__list-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: #757575;
+}
+
+.section-duties .container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-duties {
+  padding-bottom: 94px;
+}
+
+.section-duties__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+  -ms-flex-preferred-size: calc(100% / 3-30px);
+      flex-basis: calc(100% / 3-30px);
+}
+
+.section-duties__list-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.section-duties__list-img {
+  display: block;
+}
+
+/*duties overlay*/
+.section-duties__text-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.section-duties__img-continer {
+  position: relative;
+}
+
+.section-duties__list-text {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .hero {
   margin-top: 0;
   margin-bottom: 0px;
@@ -1121,9 +1262,7 @@ footer .logo {
   margin-bottom: 4px;
 }
 
-/*section-advantages*/
-/*кнопка заказать услугу*/
-.header .logo {
+/*.header .logo {
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -1132,6 +1271,7 @@ footer .logo {
 .modal__close-button {
   content: "";
   position: absolute;
+
   right: 8px;
   top: 8px;
   padding: 0;
@@ -1140,44 +1280,40 @@ footer .logo {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  background-color: #ffffff;
+
+  background-color: $background-color;
   width: 30px;
   height: 30px;
   background-image: url("../images/close-icon.svg");
-  color: #212121;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  color: $title-text-color;
+  box-sizing: border-box;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 11px, 11px;
   display: inline-block;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms $timing-function;
 }
 
-/*modal-window-data*/
+modal-window-data
 .modal__form {
   position: relative;
   display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  justify-content: center;
+  align-self: center;
 }
 
-/*signup form*/
+signup form
+
 .footer__signup-form--text {
   margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+
+  color: $second-text-accent;
 }
 
 .footer__signup-field {
@@ -1186,16 +1322,12 @@ footer .logo {
 }
 
 .footer__signup-field--label {
-  color: #ffffff;
+  color: $second-text-accent;
   position: absolute;
   top: 50%;
   left: 16px;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transition: transform 250ms $timing-function;
+  transform: translateY(-50%);
 }
 
 .footer__signup-field--input {
@@ -1203,24 +1335,22 @@ footer .logo {
   width: 358px;
   height: 50px;
   background-color: #2f303a;
-  color: #ffffff;
+  color: $second-text-accent;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .footer__signup-field--input:focus {
   outline: none;
-  border-color: #2196f3;
+  border-color: $accent;
 }
 
 .footer__signup-field--input:focus + .footer__signup-field--label {
   top: 5px;
   left: 16px;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
 .footer__sign-button--container {
@@ -1228,23 +1358,24 @@ footer .logo {
 }
 
 .footer__sign-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
+
   min-width: 200px;
   margin-left: 12px;
-  border: 1px solid #2196f3;
+  border: 1px solid $accent;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  color: #ffffff;
+  color: $second-text-accent;
+
   margin: 0;
   padding: 10px 28px;
-  background-color: #2196f3;
+  background-color: $accent;
+
   border-radius: 4px;
   cursor: pointer;
-  -webkit-transition: 250 cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250 cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250 $timing-function;
 }
 
 .footer__sign-button::after {
@@ -1256,7 +1387,8 @@ footer .logo {
   background-image: url("../images/icon-send.svg");
 }
 
-/*data form*/
+data form
+
 .form-field label {
   margin-top: 10px;
   margin-bottom: 4px;
@@ -1267,8 +1399,6 @@ footer .logo {
 }
 
 .footer__signup-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1285,7 +1415,7 @@ footer .logo {
 }
 
 .backdrop__textarea:focus {
-  border-color: #2196f3;
+  border-color: $accent;
 }
 
 .footer__sign-button {
@@ -1294,23 +1424,21 @@ footer .logo {
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #2196f3;
+  background-color: $accent;
   border-radius: 4px;
-  color: #ffffff;
+  color: $second-text-accent;
 }
-
 .footer__sign-button :hover,
 .footer__sign-button:focus {
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .backdrop__form--icon {
   position: absolute;
+
   left: 12px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .backdrop__form--icon-container {
@@ -1322,12 +1450,11 @@ footer .logo {
   position: absolute;
   right: 28px;
   top: 30%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .backdrop__checkbox-link {
-  color: #2196f3;
+  color: $accent;
 }
 
 .backdrop__label-text {
@@ -1338,19 +1465,21 @@ footer .logo {
   position: absolute;
   top: -15%;
   left: 14px;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  transform: translateY(50%);
+
   width: 15px;
   height: 15px;
-  border: 2px solid #212121;
+
+  border: 2px solid $borderColorBlack;
+
   border-radius: 3px;
   cursor: pointer;
 }
 
 .backdrop__checkbox-input:checked + .backdrop__checkbox-icon {
-  border-color: #2196f3;
-  background-color: #2196f3;
-  background-image: url("../images/icon check.svg");
+  border-color: $accent;
+  background-color: $accent;
+  background-image: url("../images/icon\ check.svg");
   background-size: contain;
   background-origin: border-box;
 }
@@ -1369,33 +1498,30 @@ footer .logo {
 }
 
 .backdrop__send-form--button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-decoration: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   min-width: 200px;
   min-height: 50px;
   padding: 10px 55px;
   margin-left: auto;
   margin-right: auto;
+
   border: none;
-  background-color: #2196f3;
+  background-color: $accent;
   border-radius: 4px;
-  color: #ffffff;
+  color: $second-text-accent;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
+
   letter-spacing: 0.06em;
   cursor: pointer;
 }
 
 .backdrop__send-form--button:hover,
 .backdrop__send-form--button:focus {
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}*/
 /*# sourceMappingURL=main.css.map */
